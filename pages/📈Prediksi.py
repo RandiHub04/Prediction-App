@@ -80,7 +80,7 @@ with st.expander ("Buat prediksi", expanded=True):
         hier = ["National", "Regional", "Local", "Not Holiday"]
         # Initialize the OrdinalEncoder with the hierarchy
 
-        OE - OrdinalEncoder(categories=[hier])
+        OE = OrdinalEncoder(categories=[hier])
 
         input_df[["locale"]] = OE.fit_transform(input_df[["locale"]])
 
